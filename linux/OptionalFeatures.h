@@ -4,15 +4,15 @@
 #define HEADER_OPTIONAL_FEATURES
 
 // Uncomment this line to enable MP3 support
-#define ENABLE_MP3
+// #define ENABLE_MP3
 // Uncomment this line to enable AAC support
-#define ENABLE_AAC
+// #define ENABLE_AAC
 // Uncomment this line to enable the Radio source
-#define ENABLE_RADIO
+// #define ENABLE_RADIO
 // Uncomment this line to enable Tidal service support
-#define ENABLE_TIDAL
+// #define ENABLE_TIDAL
 // Uncomment this line to enable Qobuz service support
-#define ENABLE_QOBUZ
+// #define ENABLE_QOBUZ
 
 
 static const OpenHome::Brn TuneinAuthPartnerId("");
