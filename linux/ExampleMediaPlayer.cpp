@@ -399,7 +399,7 @@ void ExampleMediaPlayer::AddConfigApp()
                                           kMinWebUiResourceThreads,
                                           kMaxUiTabs,
                                           kUiSendQueueSize,
-										  kUiMsgBufCount, 
+                                          kUiMsgBufCount, 
                                           kUiMsgBufBytes,
                                           iRebootHandler);
 
@@ -481,8 +481,10 @@ OpenHome::Net::Library* ExampleMediaPlayerInit::CreateLibrary(TIpAddress preferr
     {
         TIpAddress subnet = (*subnetList)[i]->Subnet();
 
-        // If the requested subnet is available, choose it.
-		const TBool isPreferredSubnet = TIpAddressUtils::Equals(preferredSubnet, subnet);
+        // If the requested subnet is available, choose it
+      
+        const TBool isPreferredSubnet = TIpAddressUtils::Equals(preferredSubnet, subnet);
+
         if (isPreferredSubnet)
         {
             index = i;
@@ -492,6 +494,7 @@ OpenHome::Net::Library* ExampleMediaPlayerInit::CreateLibrary(TIpAddress preferr
         // If the last used subnet is available, note it.
         // We'll fall back to it if the requested subnet is not available.
        const TBool isLastSubnet =  TIpAddressUtils::Equals(lastSubnet, subnet);
+
         if (isLastSubnet)
         {
             index = i;

@@ -1013,6 +1013,12 @@ void DriverAlsa::PipelineAnimatorGetMaxSampleRates(TUint& aPcm, TUint& aDsd) con
     aDsd=0;
 }
 
+void DriverAlsa::PipelineAnimatorGetMaxSampleRates(TUint& aPcm, TUint& aDsd) const
+{
+    aPcm = 192000;
+    aDsd = 5644800;
+}
+
 Msg* DriverAlsa::ProcessMsg(MsgHalt* aMsg)
 {
     aMsg->ReportHalted();

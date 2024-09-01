@@ -37,7 +37,6 @@ namespace Web {
 namespace Av {
     class RamStore;
     class ControlPointProxy;
- 
 
 class ExampleMediaPlayer : private Net::IResourceManager
 {
@@ -51,6 +50,7 @@ class ExampleMediaPlayer : private Net::IResourceManager
     static const TUint kShellPort       = 2323;
     static const Brn   kResourceDir;
     static const Brn   kPlayerName;
+
 public:
     ExampleMediaPlayer(Net::DvStack& aDvStack, Net::CpStack& aCpStack,
 					   const Brx& aUdn,
