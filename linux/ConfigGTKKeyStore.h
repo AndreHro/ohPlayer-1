@@ -2,11 +2,11 @@
 
 #include <glib.h>
 
-#include <string>
-
 #include <OpenHome/Buffer.h>
 #include <OpenHome/Configuration/IStore.h>
 #include <OpenHome/Private/Thread.h>
+
+#include <string>
 
 namespace OpenHome {
 namespace Configuration {
